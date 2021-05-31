@@ -14,8 +14,8 @@ function setup() {
   createCanvas(400, 400);
   //changed how the hero looks
   img = loadImage("star.png");
+  img2 = loadImage("star2.png");
   img3 = loadImage("star3.jpeg");
-  let img2 = loadImage("star2.png");
 
   hero = new Mover(img);
   force = createVector(-0.01, 0);
@@ -23,11 +23,11 @@ function setup() {
 
   //changed the number of enemies that spawn
   for (let i = 0; i < 60; i++) {
-    enemys.push(new Baddies(img2));
+    enemys.push(new Startwo(img2));
   }
   //added another enemy
-  for (let i = 0; i < 40; i++) {
-    enemys.push(new Baddies(img3));
+  for (let i = 0; i < 60; i++) {
+    enemys.push(new Starthree(img3));
   }
 }
 
@@ -63,7 +63,6 @@ function open() {
   fill("white");
   textSize(20);
   text("Click anywhere to continue!", 80, 220);
-  //mySound.play();
 }
 
 //added a tutorial

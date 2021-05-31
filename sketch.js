@@ -6,16 +6,12 @@
 let hero;
 let force;
 let gravity;
-let mySound;
 let sNum = 0;
 let enemys = [];
 let img;
 
 function setup() {
   createCanvas(400, 400);
-  //loading assets
-  //soundFormats('mp3');
-  mySound = loadSound("assets/energy.mp3");
   //changed how the hero looks
   img = loadImage("star.png");
   img3 = loadImage("star3.jpeg");

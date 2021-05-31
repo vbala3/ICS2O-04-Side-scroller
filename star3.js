@@ -1,7 +1,7 @@
-class Baddies2 {
+class Starthree {
   constructor(img) {
     //added another enemy
-    this.pos = createVector(random(7000), random(300));
+    this.pos = createVector(random(2000), random(300));
     this.vel = createVector(0, 0);
     this.acc = createVector(0, 0);
     this.pic = img;
